@@ -4,5 +4,5 @@ module.exports = (fn = val => val) =>
             (
                 Number.isFinite(key = fn(val)) &&
                 (acc[key] = acc[key] ? [...acc[key], val] : [val])
-            ) ? acc : acc
+            ) ? acc : null
         , {})
